@@ -21,6 +21,7 @@ and open the template in the editor.
             $inv->setPrecioMayor(123456789);
             $inv->setObservaciones("El proveedor es gay y sabe matar gente");
             $inventarios = new InventarioDAO();
+            $inventarios->insert($inv);
             $i = $inventarios->findAll();
             echo(var_dump($i));
         ?>
